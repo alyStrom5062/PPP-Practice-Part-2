@@ -2,7 +2,9 @@ def max_num(one, two, three):
     # Write a Python function called max_num()to find the maximum of three numbers.
     return max([one, two, three])
 
-print(max_num(4, 3, 6)) # 6
+print(max_num(1,2,3))
+print(max_num(100,50,1))
+print(max_num(15,30,2))
 
 def mult_list(lst):
     # Write a Python function called mult_list() to multiply all the numbers in a list.
@@ -17,19 +19,25 @@ def mult_list(lst):
 
     return result
 
-print(mult_list([4, 2, 2])) # 16
+print(mult_list([1,2,3]))
+print(mult_list([]))
+print(mult_list([15]))
 
 def rev_string(string):
     # Write a Python function called rev_string() to reverse a string.
     return string[::-1]
 
-print(rev_string("taco")) # acot
+print(rev_string(""))
+print(rev_string("apple"))
+print(rev_string("mt string"))
 
 def num_within(i, min, max):
     # Write a Python function called num_within() to check whether a number falls in a given range.
     return i in range(min, max + 1)
 
-print(num_within(4, 2, 5)) # True
+print(num_within(3,2,4))     
+print(num_within(3,1,3))     
+print(num_within(10,2,5))
 
 # PASCAL
 triangle = [[1], [1, 1]]
@@ -60,4 +68,5 @@ def pascal(n):
         for row in triangle:
             print(row)
 
-pascal(3)
+pascal(2)
+pascal(5)
